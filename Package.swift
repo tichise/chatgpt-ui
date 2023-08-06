@@ -11,11 +11,17 @@ let package = Package(
             name: "ChatGPTUI",
             targets: ["ChatGPTUI"]),
     ],
+    dependencies: [
+        .package(url: "https://github.com/tichise/TILogger.git", from: "1.3.1"),
+        .package(url: "https://github.com/MacPaw/OpenAI.git", from: "0.2.3"),
+    ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "ChatGPTUI"),
+            name: "ChatGPTUI",
+            dependencies: ["TILogger", "OpenAI"]
+        ),
         .testTarget(
             name: "ChatGPTUITests",
             dependencies: ["ChatGPTUI"]),
