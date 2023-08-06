@@ -151,7 +151,8 @@ struct DetailView: View {
                     .padding(.trailing)
             }
         }
-        .padding(.bottom)
+        // 下と右だけpadding
+        .padding(.bottom).padding(.trailing)
     }
     
     /// 入力テキストの送信
