@@ -1,6 +1,4 @@
-# ChatGPTUI  ![Platform](https://img.shields.io/cocoapods/p/PopOverMenu.svg?style=flat) ![License](https://img.shields.io/cocoapods/l/PopOverMenu.svg?style=flat)
-
-PopOverMenu is a PopOver style menu.
+# ChatGPTUI
 This repository is a repository to prepare UI for chat GPT.
 
 ## Support
