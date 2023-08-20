@@ -98,7 +98,7 @@ struct DetailView: View {
             #elseif os(macOS)
             return Color(.systemRed)
             #endif
-        }())
+        })
         .padding(.horizontal)
     }
 
