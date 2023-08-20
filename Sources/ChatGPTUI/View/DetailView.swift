@@ -92,13 +92,7 @@ struct DetailView: View {
             error.localizedDescription
         )
         .font(.caption)
-        .foregroundColor({
-            #if os(iOS)
-            return Color(uiColor: .systemRed)
-            #elseif os(macOS)
-            return Color(.systemRed)
-            #endif
-        })
+        .foregroundColor(Color(uiColor: .systemRed))
         .padding(.horizontal)
     }
 
