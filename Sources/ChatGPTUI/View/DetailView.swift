@@ -12,8 +12,8 @@ struct DetailView: View {
     @State var inputText: String = "" // 入力テキスト
     @FocusState private var isFocused: Bool // フォーカス状態
     @State private var showsModelSelectionSheet = false // モデル選択シート表示フラグ
-    @State private var selectedChatModel: Model = .gpt3_5Turbo0613 // 選択中のモデル
-    private let availableChatModels: [Model] = [.gpt3_5Turbo0613, .gpt4_0613] // 利用可能なモデル一覧
+    @State private var selectedChatModel: Model = .gpt3_5Turbo_0125 // 選択中のモデル
+    private let availableChatModels: [Model] = [.gpt3_5Turbo_0125, .gpt4_0613] // 利用可能なモデル一覧
 
     let conversation: Conversation // 会話
     let error: Error? // エラー
